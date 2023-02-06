@@ -1,0 +1,111 @@
+.header {
+    background-image: -webkit-image-set(url('../img/main-bg.webp') 1x,
+            url('../img/main-bg@2x.webp') 2x,
+        );
+    background-position: center center;
+    height: 950px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.header__content-top {
+    width: 100%;
+}
+
+.header__nav {
+    margin-top: $spacing-large;
+}
+
+.header__list {
+    display: flex;
+    align-items: stretch;
+    justify-content: space-between;
+}
+
+.header__list-item {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.header__list-item:nth-child(4) {
+    flex-grow: .4;
+}
+
+.header__list-item-link {
+    display: flex;
+    align-items: center;
+    font-size: $font-size-small;
+    color: $color-white;
+
+    span {
+        margin-left: $spacing-normal;
+    }
+}
+
+.header__content-bottom {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.header__link-block {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 80px;
+}
+
+.header__link-title {
+    font-size: $font-size-title;
+    margin-bottom: 50px;
+}
+
+.header__brand-icons {
+    width: 100%;
+    padding: $spacing-large 0;
+    border-top: 1px solid $color-white;
+}
+
+.header__brand-list {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+.header__brand-list-item {
+    border-right: 1px solid $color-white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex: auto;
+    min-width: 180px;
+
+    img {
+        width: 160px;
+        height: 60px;
+        object-fit: contain;
+        object-position: center center;
+        // margin: 0 $spacing-normal;
+
+    }
+}
+
+.header__brand-list-item:last-child {
+    border-right: none;
+
+    img {
+        margin-right: 0;
+    }
+}
+
+.header__brand-list-item:first-child {
+    img {
+        margin-left: 0;
+    }
+}

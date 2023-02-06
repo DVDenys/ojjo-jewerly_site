@@ -1,0 +1,15 @@
+.button-dark {
+    text-transform: uppercase;
+    letter-spacing: .1em;
+    line-height: 21px;
+    font-size: $font-size-large;
+    font-weight: 500;
+    padding: $spacing-normal $spacing-medium;
+    border: 1px solid $color-white;
+    background-color: $color-accent;
+    transition: $transition;
+}
+
+.button-dark:hover {
+    text-shadow: 0 0 20px $color-light-grey;
+}
