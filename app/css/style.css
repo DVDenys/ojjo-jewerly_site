@@ -545,4 +545,302 @@ a {
   font-size: 22px;
   padding: 0 15px;
 }
+
+.social-media {
+  margin-bottom: 150px;
+}
+
+.social-media__content {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.social-media__sub-title {
+  color: #333;
+  font-size: 22px;
+  text-align: center;
+}
+
+.social-media__title {
+  color: #333;
+  font-size: 36px;
+  font-weight: 700;
+  margin-top: 15px;
+  margin-bottom: 60px;
+}
+
+.social-media__first-row {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.social-media__video-box {
+  position: relative;
+  cursor: pointer;
+}
+
+.social-media__video-play {
+  position: absolute;
+  left: calc(50% - 35px);
+  top: calc(50% - 35px);
+}
+
+.social-media__second-row {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.mailing-list {
+  background-image: -webkit-image-set(url(../img/second-bg.webp) 1x, url(../img/second-bg@2x.webp) 2x);
+  background-position: center center;
+  background-repeat: no-repeat;
+  padding: 100px 0;
+  color: #ffffff;
+}
+
+.mailing-list__content {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.mailing-list__sub-title {
+  font-size: 22px;
+}
+
+.mailing-list__title {
+  margin: 15px 0 60px 0;
+  font-size: 36px;
+}
+
+.mailing-list__form-box {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.mailing-list__benefits {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  margin-right: 60px;
+}
+
+.mailing-list__benefits-item {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+.mailing-list__benefits-item img {
+  margin-right: 20px;
+}
+.mailing-list__benefits-item p {
+  font-size: 18px;
+}
+
+.mailing-list__form-item {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  border: 1px solid #ffffff;
+  padding: 15px;
+}
+.mailing-list__form-item form {
+  padding: 20px;
+  background-color: #E5E5E5;
+}
+.mailing-list__form-item form input {
+  padding: 15px 20px;
+  text-transform: uppercase;
+  outline: 1px solid transparent;
+  border: 1px solid #D6D6D6;
+}
+.mailing-list__form-item form input::-webkit-input-placeholder {
+  color: #333;
+  opacity: 0.5;
+}
+.mailing-list__form-item form input::-moz-placeholder {
+  color: #333;
+  opacity: 0.5;
+}
+.mailing-list__form-item form input:-ms-input-placeholder {
+  color: #333;
+  opacity: 0.5;
+}
+.mailing-list__form-item form input::-ms-input-placeholder {
+  color: #333;
+  opacity: 0.5;
+}
+.mailing-list__form-item form input::placeholder {
+  color: #333;
+  opacity: 0.5;
+}
+.mailing-list__form-item form button {
+  cursor: pointer;
+  background-color: #333;
+  border: 1px solid #E5E5E5;
+  text-transform: uppercase;
+  color: #ffffff;
+  font-size: 14px;
+  padding: 15px 35px;
+}
+
+.footer {
+  padding-top: 80px;
+}
+
+.footer__content {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.footer__main-box {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: stretch;
+      -ms-flex-align: stretch;
+          align-items: stretch;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  width: 100%;
+}
+
+.footer__card {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+  max-width: 250px;
+  width: 100%;
+}
+
+.footer__card-title {
+  color: #333;
+  font-weight: 500;
+  letter-spacing: 0.1em;
+  line-height: 140%;
+  text-transform: uppercase;
+  padding-bottom: 10px;
+  border-bottom: 1px solid #333;
+  margin-bottom: 30px;
+  width: 100%;
+}
+
+.footer__card-link {
+  font-size: 14px;
+  color: #333;
+  margin-bottom: 15px;
+}
+
+.footer__card-text {
+  font-size: 14px;
+  color: #333;
+  margin-bottom: 20px;
+}
+
+.footer__card-img-box {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+.footer__card-img-box img {
+  margin-right: 20px;
+}
+.footer__card-img-box a {
+  font-size: 14px;
+  color: #333;
+}
+
+.footer__card-link-phone {
+  margin: 20px 0;
+}
+
+.footer__copyright-box {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  width: 100%;
+  font-size: 14px;
+  color: #333;
+  padding: 20px 0;
+  border-top: 1px solid #333;
+}
+.footer__copyright-box a {
+  font-size: 14px;
+  color: #333;
+}
+
+.footer__copyright-made {
+  font-weight: 600;
+  text-decoration: underline;
+}
 /*# sourceMappingURL=style.css.map */

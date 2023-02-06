@@ -1,0 +1,42 @@
+.social-media {
+    margin-bottom: 150px;
+}
+
+.social-media__content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.social-media__sub-title {
+    color: $color-accent;
+    font-size: $font-size-ultra-large;
+    text-align: center;
+}
+
+.social-media__title {
+    color: $color-accent;
+    font-size: $font-size-title;
+    font-weight: 700;
+    margin-top: 15px;
+    margin-bottom: 60px;
+}
+
+.social-media__first-row {
+    display: flex;
+}
+
+.social-media__video-box {
+    position: relative;
+    cursor: pointer;
+}
+
+.social-media__video-play {
+    position: absolute;
+    left: calc(50% - 35px);
+    top: calc(50% - 35px);
+}
+
+.social-media__second-row {
+    display: flex;
+}
