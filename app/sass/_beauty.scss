@@ -29,7 +29,7 @@
 }
 .beauty__list-btn {
     display: flex;
-    align-items: center;
+    align-items: flex-start;
     justify-content: space-between;
 }
 .beauty__btn-item {
@@ -49,13 +49,13 @@
     a::before{
         content: '';
         position: absolute;
-        width: 165px;
-        height: 55px;
+        width: calc(100% + 2px);
+        height: calc(100% + 2px);
         z-index: -1;
-        top: 4px;
-        left: 4px;
+        top: 5px;
+        left: 5px;
         border: 1px solid $color-light-grey;
-        transition: $transition;
+        transition: color $transition;
     }
     a:hover::before, 
     a.active::before {
@@ -65,7 +65,7 @@
     a:hover,
     a.active {
         height: 60px;
-        width: 170px;
+        width: 100%;
         background-color: $color-accent;
         color: $color-white;
         border: 1px solid transparent;
@@ -103,5 +103,18 @@
         width: 100%;
         text-align: center;
         bottom: $spacing-ultra-large;
+    }
+}
+
+@media screen and (max-width: 1100px) {
+    .beauty__list-btn {
+        flex-wrap: wrap;
+    }
+    .beauty__btn-item {
+        width: 25%;
+        margin: 10px $spacing-medium;
+        a {
+            width: auto;
+        }
     }
 }
