@@ -58,11 +58,17 @@
             text-transform: uppercase;
             outline: 1px solid transparent;
             border: 1px solid $color-light-grey;
+            transition: $transition;
         }
 
         input::placeholder {
             color: $color-accent;
             opacity: .5;
+        }
+
+        input:hover,
+        input:focus {
+            border: 1px solid $color-black-op;
         }
 
         button {
@@ -73,6 +79,47 @@
             color: $color-white;
             font-size: $font-size-small;
             padding: $spacing-normal 35px;
+            transition: $transition;
+        }
+
+        button:hover {
+            text-shadow: 0 0 20px $color-light-grey;
+        }
+    }
+}
+
+@media screen and (max-width: 991px) {
+    .mailing-list__form-box {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .mailing-list__benefits {
+        margin: 0 0 $spacing-medium 0;
+    }
+}
+
+@media screen and (max-width: 480px) {
+    .mailing-list__form-box {
+        width: 100%;
+    }
+
+    .mailing-list__form-item {
+        width: 100%;
+
+        form {
+            width: 100%;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+
+            button {
+                margin-top: $spacing-normal;
+            }
+
+            input {
+                width: 100%;
+            }
         }
     }
 }

@@ -61,6 +61,34 @@
         font-size: $font-size-small;
         color: $color-accent;
     }
+
+}
+
+.footer__img-scale {
+    transition: $transition;
+}
+
+.footer__img-scale:hover {
+    scale: 1.5;
+}
+
+.footer__link-hover {
+    position: relative;
+}
+
+.footer__link-hover::before {
+    content: '';
+    position: absolute;
+    transition: $transition;
+    left: 0;
+    bottom: 0;
+    width: 0;
+    height: 1px;
+    background-color: $color-accent;
+}
+
+.footer__link-hover:hover::before {
+    width: 100%;
 }
 
 .footer__card-link-phone {
@@ -71,6 +99,7 @@
     display: flex;
     align-items: center;
     justify-content: space-between;
+    flex-wrap: wrap;
     width: 100%;
     font-size: $font-size-small;
     color: $color-accent;
@@ -86,4 +115,49 @@
 .footer__copyright-made {
     font-weight: 600;
     text-decoration: underline;
+}
+
+@media screen and (max-width: 1100px) {
+    .footer__main-box {
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+
+    .footer__card {
+        width: 100%;
+        padding: $spacing-normal;
+        align-items: center;
+    }
+
+    .footer__card-title {
+        text-align: center;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .footer__copyright-box {
+        a {
+            text-align: center;
+            padding: $spacing-small 0;
+            width: 50%;
+        }
+
+        p {
+            text-align: center;
+            width: 50%;
+        }
+    }
+
+}
+
+@media screen and (max-width: 480px) {
+    .footer__copyright-box {
+        a {
+            width: 100%;
+        }
+
+        p {
+            width: 100%;
+        }
+    }
 }

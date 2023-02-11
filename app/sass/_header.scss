@@ -40,12 +40,47 @@
 .header__list-item-link {
     display: flex;
     align-items: center;
+    position: relative;
     font-size: $font-size-small;
     color: $color-white;
+    transition: $transition;
+    height: 100%;
+    border-bottom: 1px solid transparent;
 
     span {
         margin-left: $spacing-normal;
     }
+}
+
+.header__list-item-link:hover {
+    text-shadow: $color-white 1px 0 10px;
+}
+
+.header__list-item:nth-child(4)>.header__list-item-link:hover::before {
+    width: 0;
+}
+
+.header__list-item:nth-child(4)>.header__list-item-link {
+    border-radius: 30px;
+}
+
+.header__list-item:nth-child(4)>.header__list-item-link:hover {
+    scale: 1.1;
+}
+
+.header__list-item-link::before {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 0;
+    height: 1px;
+    background-color: $color-white;
+    transition: $transition;
+}
+
+.header__list-item-link:hover::before {
+    width: 100%;
 }
 
 .header__content-bottom {

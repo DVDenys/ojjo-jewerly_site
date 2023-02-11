@@ -14,3 +14,9 @@
 		padding: 0 $spacing-large;
 	}
 }
+
+@media screen and (max-width: 375px) {
+	.content-container {
+		padding: 0 $spacing-small;
+	}
+}

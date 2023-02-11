@@ -94,6 +94,8 @@
     width: 350px;
     height: 280px;
     margin-bottom: $spacing-ultra-large;
+    box-shadow: 0 0 15px $color-black-op;
+    cursor: pointer;
 
     img {
         position: absolute;
@@ -102,6 +104,7 @@
         object-fit: contain;
         object-position: center center;
         z-index: -1;
+        transition: $transition;
     }
 
     p {
@@ -117,6 +120,13 @@
     }
 }
 
+.beauty__card-item:hover {
+    img {
+        scale: 1.04;
+    }
+
+}
+
 @media screen and (max-width: 1100px) {
     .beauty__list-btn {
         flex-wrap: wrap;
@@ -128,6 +138,37 @@
 
         a {
             width: auto;
+        }
+    }
+
+    .beauty__list-card {
+        justify-content: space-evenly;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .beauty__btn-item {
+        width: 40%;
+        margin: 10px $spacing-medium;
+    }
+
+    .beauty__list-card {
+        flex-direction: column;
+    }
+}
+
+@media screen and (max-width: 480px) {
+    .beauty__btn-item {
+        width: 100%;
+        margin: 10px $spacing-medium;
+    }
+
+    .beauty__card-item {
+        width: 270px;
+        height: 216px;
+
+        img {
+            width: 270px;
         }
     }
 }
