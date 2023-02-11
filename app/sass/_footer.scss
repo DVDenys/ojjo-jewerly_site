@@ -1,18 +1,21 @@
 .footer {
     padding-top: 80px;
 }
+
 .footer__content {
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
 }
+
 .footer__main-box {
     display: flex;
     align-items: stretch;
     justify-content: space-between;
     width: 100%;
 }
+
 .footer__card {
     display: flex;
     flex-direction: column;
@@ -21,6 +24,7 @@
     max-width: 250px;
     width: 100%;
 }
+
 .footer__card-title {
     color: $color-accent;
     font-weight: 500;
@@ -32,22 +36,27 @@
     margin-bottom: $spacing-ultra-large;
     width: 100%;
 }
+
 .footer__card-link {
     font-size: $font-size-small;
     color: $color-accent;
     margin-bottom: $spacing-normal;
 }
+
 .footer__card-text {
     font-size: $font-size-small;
     color: $color-accent;
     margin-bottom: $spacing-medium;
 }
+
 .footer__card-img-box {
     display: flex;
     align-items: center;
+
     img {
         margin-right: $spacing-medium;
     }
+
     a {
         font-size: $font-size-small;
         color: $color-accent;
@@ -57,6 +66,7 @@
 .footer__card-link-phone {
     margin: $spacing-medium 0;
 }
+
 .footer__copyright-box {
     display: flex;
     align-items: center;
@@ -66,6 +76,7 @@
     color: $color-accent;
     padding: $spacing-medium 0;
     border-top: 1px solid $color-accent;
+
     a {
         font-size: $font-size-small;
         color: $color-accent;

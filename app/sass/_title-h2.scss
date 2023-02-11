@@ -1,0 +1,12 @@
+.title-h2 {
+    font-size: $font-size-title;
+    text-align: center;
+    line-height: 49px;
+    font-weight: 700;
+}
+
+@media screen and (max-width: 480px) {
+    .title-h2 {
+        font-size: $font-size-sub-title;
+    }
+}

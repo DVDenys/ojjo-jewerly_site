@@ -2,43 +2,47 @@
     margin-top: 100px;
     margin-bottom: 90px;
 }
+
 .beauty__content {
     display: flex;
     flex-direction: column;
     align-items: center;
 }
+
 .beauty__title-block {
     display: flex;
     flex-direction: column;
     align-items: center;
 }
+
 .beauty__sub-title {
     color: $color-accent;
-    font-size: $font-size-ultra-large;
 }
+
 .beauty__title {
     color: $color-accent;
-    font-weight: 700;
-    font-size: $font-size-title;
-    line-height: 41px;
     margin: 15px 0 80px 0;
 }
+
 .beauty__navigation-btn {
     width: 100%;
     margin-bottom: 50px;
 }
+
 .beauty__list-btn {
     display: flex;
     align-items: flex-start;
     justify-content: space-between;
 }
+
 .beauty__btn-item {
     width: 170px;
+
     a {
         width: 165px;
         height: 55px;
         color: $color-accent;
-        position: relative; 
+        position: relative;
         display: flex;
         align-items: center;
         justify-content: center;
@@ -46,7 +50,8 @@
         transition: $transition;
         background-color: $color-main-bg;
     }
-    a::before{
+
+    a::before {
         content: '';
         position: absolute;
         width: calc(100% + 2px);
@@ -57,11 +62,13 @@
         border: 1px solid $color-light-grey;
         transition: color $transition;
     }
-    a:hover::before, 
+
+    a:hover::before,
     a.active::before {
         left: 0;
         border-color: transparent;
     }
+
     a:hover,
     a.active {
         height: 60px;
@@ -71,20 +78,23 @@
         border: 1px solid transparent;
     }
 }
-.beauty__navigation-card {
-}
+
+.beauty__navigation-card {}
+
 .beauty__list-card {
     display: flex;
     flex-wrap: wrap;
     align-items: center;
     justify-content: space-between;
 }
+
 .beauty__card-item {
     position: relative;
     background-image: $cart-bg-gradient;
     width: 350px;
     height: 280px;
     margin-bottom: $spacing-ultra-large;
+
     img {
         position: absolute;
         left: 0;
@@ -93,6 +103,7 @@
         object-position: center center;
         z-index: -1;
     }
+
     p {
         font-size: $font-size-sub-title;
         line-height: 28px;
@@ -110,9 +121,11 @@
     .beauty__list-btn {
         flex-wrap: wrap;
     }
+
     .beauty__btn-item {
         width: 25%;
         margin: 10px $spacing-medium;
+
         a {
             width: auto;
         }

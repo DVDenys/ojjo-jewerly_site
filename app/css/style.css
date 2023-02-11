@@ -87,6 +87,25 @@ a {
   text-decoration: none;
 }
 
+.title-h2 {
+  font-size: 36px;
+  text-align: center;
+  line-height: 49px;
+  font-weight: 700;
+}
+
+@media screen and (max-width: 480px) {
+  .title-h2 {
+    font-size: 24px;
+  }
+}
+.sub-title {
+  font-weight: 400;
+  font-size: 22px;
+  line-height: 140%;
+  text-align: center;
+}
+
 .content-container {
   margin: 0 auto;
   max-width: 1110px;
@@ -212,8 +231,6 @@ a {
 }
 
 .header__link-title {
-  font-size: 36px;
-  text-align: center;
   margin-bottom: 50px;
 }
 
@@ -422,9 +439,6 @@ a {
   .header__navigation-mobile {
     display: block;
   }
-  .header__link-title {
-    font-size: 24px;
-  }
   .header__navigation-burger-menu {
     width: 50px;
     height: 50px;
@@ -487,14 +501,10 @@ a {
 
 .beauty__sub-title {
   color: #333;
-  font-size: 22px;
 }
 
 .beauty__title {
   color: #333;
-  font-weight: 700;
-  font-size: 36px;
-  line-height: 41px;
   margin: 15px 0 80px 0;
 }
 
@@ -660,15 +670,8 @@ a {
           justify-content: space-between;
 }
 
-.our-salons__sub-title {
-  font-size: 22px;
-}
-
 .our-salons__title {
   margin: 15px 0 30px 0;
-  font-weight: 700;
-  font-size: 36px;
-  line-height: 41px;
 }
 
 .our-salons__text {
@@ -700,14 +703,10 @@ a {
 
 .useful-articles__sub-title {
   color: #333;
-  font-size: 22px;
 }
 
 .useful-articles__title {
   color: #333;
-  font-size: 36px;
-  font-weight: 700;
-  line-height: 41px;
   margin: 15px 0 30px 0;
 }
 
@@ -765,14 +764,10 @@ a {
 
 .social-media__sub-title {
   color: #333;
-  font-size: 22px;
-  text-align: center;
 }
 
 .social-media__title {
   color: #333;
-  font-size: 36px;
-  font-weight: 700;
   margin-top: 15px;
   margin-bottom: 60px;
 }
@@ -824,13 +819,8 @@ a {
           justify-content: center;
 }
 
-.mailing-list__sub-title {
-  font-size: 22px;
-}
-
 .mailing-list__title {
   margin: 15px 0 60px 0;
-  font-size: 36px;
 }
 
 .mailing-list__form-box {
