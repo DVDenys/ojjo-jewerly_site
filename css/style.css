@@ -659,6 +659,7 @@ SCROLL
   background-image: -webkit-image-set(url(../img/second-bg.webp) 1x, url(../img/second-bg@2x.webp) 2x);
   background-position: center center;
   background-repeat: no-repeat;
+  background-size: cover;
   padding: 100px 0;
 }
 
@@ -836,6 +837,7 @@ SCROLL
   background-image: -webkit-image-set(url(../img/second-bg.webp) 1x, url(../img/second-bg@2x.webp) 2x);
   background-position: center center;
   background-repeat: no-repeat;
+  background-size: cover;
   padding: 100px 0;
   color: #ffffff;
 }
@@ -1248,6 +1250,10 @@ SCROLL
             align-items: center;
   }
 
+  .footer__card-text {
+    text-align: center;
+  }
+
   .footer__card-title {
     text-align: center;
   }
@@ -1380,6 +1386,11 @@ SCROLL
             transform: translateX(0);
   }
 
+  .beauty {
+    margin-top: 60px;
+    margin-bottom: 60px;
+  }
+
   .beauty__btn-item {
     width: 100%;
     margin: 10px 20px;
@@ -1394,6 +1405,11 @@ SCROLL
     width: 270px;
   }
 
+  .useful-articles {
+    margin-top: 60px;
+    margin-bottom: 60px;
+  }
+
   .useful-articles__card-item {
     height: 280px;
     width: 265px;
@@ -1401,6 +1417,10 @@ SCROLL
 
   .useful-articles__card-item img {
     height: 280px;
+  }
+
+  .social-media {
+    margin-bottom: 30px;
   }
 
   .mailing-list__form-box {
@@ -1433,6 +1453,15 @@ SCROLL
     width: 100%;
   }
 
+  .footer {
+    padding-top: 30px;
+  }
+
+  .footer__card {
+    max-width: none;
+    width: 100%;
+  }
+
   .footer__copyright-box a {
     width: 100%;
   }
@@ -1445,5 +1474,105 @@ SCROLL
 @media screen and (max-width: 375px) {
   .content-container {
     padding: 0 10px;
+  }
+
+  .footer__main-box {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: stretch;
+        -ms-flex-align: stretch;
+            align-items: stretch;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+
+  .footer__card {
+    -webkit-transition: 2s;
+    transition: 2s;
+  }
+
+  .footer__card a,
+  .footer__card p,
+  .footer__card div {
+    opacity: 0;
+    height: 0px;
+    -webkit-transition: 0.3s;
+    transition: 0.3s;
+    margin: 0;
+  }
+
+  .footer__card .footer__card-title {
+    -webkit-transition: 0.3s;
+    transition: 0.3s;
+    position: relative;
+    font-size: 16px;
+  }
+
+  .footer__card .footer__card-title::after {
+    content: "";
+    position: absolute;
+    left: 0;
+    top: calc(50% - 13px);
+    width: 16px;
+    height: 16px;
+    background-image: url("../img/arrow.png");
+    background-repeat: no-repeat;
+    background-position: center center;
+    -webkit-transition: 0.3s;
+    transition: 0.3s;
+  }
+
+  .footer__card .footer__card-title::before {
+    content: "";
+    position: absolute;
+    right: 0;
+    top: calc(50% - 13px);
+    width: 16px;
+    height: 16px;
+    -webkit-transform: rotate(180deg);
+            transform: rotate(180deg);
+    background-image: url("../img/arrow.png");
+    background-repeat: no-repeat;
+    background-position: center center;
+    -webkit-transition: 0.3s;
+    transition: 0.3s;
+  }
+
+  .footer__card.footer-card-active a,
+  .footer__card.footer-card-active p,
+  .footer__card.footer-card-active div {
+    opacity: 1;
+    height: auto;
+    margin-bottom: 15px;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+  }
+
+  .footer__card.footer-card-active a img,
+  .footer__card.footer-card-active p img,
+  .footer__card.footer-card-active div img {
+    margin-bottom: 15px;
+  }
+
+  .footer__card.footer-card-active .footer__card-social-link img {
+    margin-bottom: 0;
+  }
+
+  .footer__card.footer-card-active .footer__card-social-link:last-child img {
+    margin: 0;
+  }
+
+  .footer__card.footer-card-active .footer__card-title {
+    border-bottom: 1px solid transparent;
+  }
+
+  .footer__card.footer-card-active .footer__card-title::before,
+  .footer__card.footer-card-active .footer__card-title::after {
+    -webkit-transform: rotate(90deg);
+            transform: rotate(90deg);
   }
 }
