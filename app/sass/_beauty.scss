@@ -158,6 +158,10 @@
 }
 
 @media screen and (max-width: 480px) {
+    .beauty {
+        margin-top: $spacing-ultra-large*2;
+        margin-bottom: $spacing-ultra-large*2;
+    }
     .beauty__btn-item {
         width: 100%;
         margin: 10px $spacing-medium;

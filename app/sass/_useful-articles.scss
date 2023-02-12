@@ -71,6 +71,10 @@
 }
 
 @media screen and (max-width: 480px) {
+    .useful-articles {
+        margin-top: $spacing-ultra-large*2;
+        margin-bottom: $spacing-ultra-large*2;
+    }
     .useful-articles__card-item {
         height: 280px;
         width: 265px;

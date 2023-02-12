@@ -129,6 +129,10 @@
         align-items: center;
     }
 
+    .footer__card-text {
+        text-align: center;
+    }
+
     .footer__card-title {
         text-align: center;
     }
@@ -151,6 +155,14 @@
 }
 
 @media screen and (max-width: 480px) {
+    .footer {
+        padding-top: 30px;
+    }
+    .footer__card {
+        max-width: none;
+        width: 100%;
+    }
+
     .footer__copyright-box {
         a {
             width: 100%;
@@ -158,6 +170,99 @@
 
         p {
             width: 100%;
+        }
+    }
+}
+
+
+@media screen and (max-width: 375px) {
+
+    .footer__main-box {
+        flex-direction: column;
+        align-items: stretch;
+        justify-content: center;
+    }
+    .footer__card {
+        transition: 2s;
+
+        a,
+        p,
+        div {
+            opacity: 0;
+            height: 0px;
+            transition: $transition;
+            margin: 0;
+            // display: none;
+        }
+
+        .footer__card-title {
+            transition: $transition;
+            position: relative;
+            font-size: $font-size-normal;
+        }
+
+        .footer__card-title::after {
+            content: '';
+            position: absolute;
+            left: 0;
+            top: calc(50% - 13px);
+            width: 16px;
+            height: 16px;
+            background-image: url('../img/arrow.png');
+            background-repeat: no-repeat;
+            background-position: center center;
+            transition: $transition;
+        }
+
+        .footer__card-title::before {
+            content: '';
+            position: absolute;
+            right: 0;
+            top: calc(50% - 13px);
+            width: 16px;
+            height: 16px;
+            transform: rotate(180deg);
+            background-image: url('../img/arrow.png');
+            background-repeat: no-repeat;
+            background-position: center center;
+            transition: $transition;
+        }
+    }
+
+    .footer__card.footer-card-active {
+
+        a,
+        p,
+        div {
+            opacity: 1;
+            height: auto;
+            margin-bottom: $spacing-normal;
+            display: flex;
+
+            img {
+                margin-bottom: $spacing-normal;
+            }
+        }
+
+        .footer__card-social-link {
+            img {
+                margin-bottom: 0;
+            }
+        }
+
+        .footer__card-social-link:last-child {
+            img {
+                margin: 0;
+            }
+        }
+
+        .footer__card-title {
+            border-bottom: 1px solid transparent;
+        }
+
+        .footer__card-title::before,
+        .footer__card-title::after {
+            transform: rotate(90deg);
         }
     }
 }
