@@ -366,7 +366,7 @@ SCROLL
 .header__navigation-mobile img {
   position: absolute;
   left: 0;
-  top: calc(50% - 26px);
+  top: calc(50% - 13px);
   z-index: 2;
   width: 216px;
 }
@@ -1133,7 +1133,7 @@ SCROLL
   height: 30px;
   position: absolute;
   right: 0;
-  top: calc(50% - 15px);
+  top: 50%;
   z-index: 2;
   overflow: hidden;
 }
