@@ -832,6 +832,16 @@ SCROLL
 .social-media__video-box {
   position: relative;
   cursor: pointer;
+  width: 555px;
+  height: 300px;
+}
+
+.social-media__video-box video {
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 555px;
+  height: 300px;
 }
 
 .social-media__video-play {
@@ -1341,8 +1351,14 @@ SCROLL
     width: auto;
   }
 
-  .social-media__video-box img {
+  .social-media__video-box {
     max-width: 277px;
+    height: 150px;
+  }
+
+  .social-media__video-box video {
+    max-width: 277px;
+    height: auto;
   }
 
   .social-media__first-row {
