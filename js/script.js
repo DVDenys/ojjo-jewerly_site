@@ -26,7 +26,7 @@ function removeOverflow() {
 // footer-card
 let [...cardList] = document.querySelectorAll(".footer__card");
 cardList.forEach((item) => {
-  item.addEventListener("click", () => {
+  item.childNodes[1].addEventListener("click", () => {
     item.classList.toggle("footer-card-active");
   });
 });
