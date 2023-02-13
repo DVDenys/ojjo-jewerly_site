@@ -3,7 +3,11 @@
   "version": "1.0.0",
   "description": "",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "gulp": "gulp",
+    "gulp build": "gulp build ",
+    "build-gh-pages": "gh-pages -d dist",
+    "deploy": "npm run gulp build && npm run build-gh-pages"
   },
   "browserslist": [
     "last 2 versions",
@@ -14,6 +18,7 @@
   "devDependencies": {
     "browser-sync": "^2.26.10",
     "del": "^5.1.0",
+    "gh-pages": "^5.0.0",
     "gulp": "^4.0.2",
     "gulp-clean-css": "^4.3.0",
     "gulp-group-css-media-queries": "^1.2.2",
