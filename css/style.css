@@ -369,9 +369,7 @@ SCROLL
 }
 
 .header__list-mobile {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
+  display: none;
   -webkit-box-orient: vertical;
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
@@ -1415,6 +1413,12 @@ SCROLL
 
   .content-container {
     padding: 0 25px;
+  }
+
+  .header__list-mobile {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
   }
 
   .header {
