@@ -386,14 +386,14 @@ SCROLL
   font-size: 22px;
   z-index: 1;
   position: fixed;
+  -webkit-transform: translateX(-100%);
+          transform: translateX(-100%);
   top: 0;
   left: 0;
   width: 100%;
   height: 100%;
   padding: 30px;
   background: #333;
-  -webkit-transform: translateX(-100%);
-          transform: translateX(-100%);
   -webkit-transition: 0.3s;
   transition: 0.3s;
   margin: 0;
@@ -402,6 +402,12 @@ SCROLL
 
 .header__list-mobile li {
   list-style-type: none;
+}
+
+.header__list-mobile.active {
+  -webkit-transform: translateX(-100%);
+          transform: translateX(-100%);
+  overflow: auto;
 }
 
 .header__mobile-social {
