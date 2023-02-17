@@ -703,6 +703,11 @@ SCROLL
   text-align: center;
   bottom: 30px;
 }
+.beauty__card-item a {
+  display: inline-block;
+  width: 100%;
+  height: 100%;
+}
 
 .beauty__card-item:hover img {
   scale: 1.04;
