@@ -9,15 +9,16 @@
     flex-direction: column;
     align-items: center;
     justify-content: space-between;
+    padding-top: $spacing-large;
 }
 
 .header__content-top {
     width: 100%;
 }
 
-.header__nav {
-    margin-top: $spacing-large;
-}
+// .header__nav {
+
+// }
 
 .header__list {
     display: flex;

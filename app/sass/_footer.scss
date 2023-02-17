@@ -212,7 +212,8 @@
             top: calc(50% - 13px);
             width: 16px;
             height: 16px;
-            background-image: url('../img/arrow.png');
+            background-image: url('../img/arrow.svg');
+            transform: rotate(-90deg);
             background-repeat: no-repeat;
             background-position: center center;
             transition: $transition;
@@ -225,8 +226,8 @@
             top: calc(50% - 13px);
             width: 16px;
             height: 16px;
-            transform: rotate(180deg);
-            background-image: url('../img/arrow.png');
+            transform: rotate(90deg);
+            background-image: url('../img/arrow.svg');
             background-repeat: no-repeat;
             background-position: center center;
             transition: $transition;
@@ -260,7 +261,7 @@
 
         .footer__card-title::before,
         .footer__card-title::after {
-            transform: rotate(90deg);
+            transform: rotate(0deg);
         }
     }
 }
