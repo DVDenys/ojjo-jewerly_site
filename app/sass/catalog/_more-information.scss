@@ -73,3 +73,15 @@
         display: inline;
     }
 }
+
+@media screen and (max-width: 800px) {
+    .more-information__content {
+        flex-direction: column;
+    }
+    .more-information__img-block {
+        margin-top: $spacing-medium;
+        max-width: 350px;
+        width: 100%;
+    }
+}
+
