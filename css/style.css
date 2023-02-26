@@ -1239,6 +1239,10 @@ SCROLL
       -ms-flex-pack: justify;
           justify-content: space-between;
   margin: 30px 0;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -ms-flex-negative: 1;
+      flex-shrink: 1;
 }
 
 .filter__item-wrapper {
@@ -1270,8 +1274,8 @@ SCROLL
   cursor: pointer;
   padding: 5px 0;
   background-color: transparent;
-  -webkit-transition: 0.3s;
-  transition: 0.3s;
+  -webkit-transition: border 0.3s;
+  transition: border 0.3s;
   color: #333;
 }
 
@@ -1306,6 +1310,8 @@ SCROLL
   -ms-flex-pack: distribute;
       justify-content: space-around;
   width: 100%;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
 }
 
 .catalog__card-list-row:first-child {
@@ -1332,10 +1338,18 @@ SCROLL
       -ms-flex-align: center;
           align-items: center;
   padding: 20px;
+  -webkit-transition: 0.3s;
+  transition: 0.3s;
 }
 
 .catalog__card a {
   margin: 10px 0 0 0;
+}
+
+.catalog__card:hover {
+  scale: 1.01;
+  -webkit-box-shadow: 0px 0px 15px #333;
+          box-shadow: 0px 0px 15px #333;
 }
 
 .catalog__card-subtitle {
@@ -1545,6 +1559,15 @@ SCROLL
   .footer__card-title {
     text-align: center;
   }
+
+  .filter__item-wrapper {
+    width: 30%;
+    margin-bottom: 20px;
+  }
+
+  .filter__item-wrapper select {
+    width: 100%;
+  }
 }
 
 @media screen and (max-width: 991px) {
@@ -1570,6 +1593,21 @@ SCROLL
 
   .mailing-list__benefits {
     margin: 0 0 20px 0;
+  }
+}
+
+@media screen and (max-width: 800px) {
+  .more-information__content {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+
+  .more-information__img-block {
+    margin-top: 20px;
+    max-width: 350px;
+    width: 100%;
   }
 }
 
@@ -1637,6 +1675,12 @@ SCROLL
   .footer__copyright-box p {
     text-align: center;
     width: 50%;
+  }
+}
+
+@media screen and (max-width: 600px) {
+  .filter__item-wrapper {
+    width: 45%;
   }
 }
 
@@ -1868,6 +1912,10 @@ SCROLL
   .footer__card.footer-card-active .footer__card-title::after {
     -webkit-transform: rotate(0deg);
             transform: rotate(0deg);
+  }
+
+  .filter__item-wrapper {
+    width: 100%;
   }
 }
 
