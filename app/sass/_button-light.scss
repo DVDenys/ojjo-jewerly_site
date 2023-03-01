@@ -1,6 +1,6 @@
 .button-light {
     background-color: $color-white;
-    border: 1px solid $color-white;
+    border: 1px solid $color-accent;
     padding: $spacing-normal $spacing-ultra-large;
     color: $color-accent;
     font-size: $font-size-large;
@@ -11,5 +11,6 @@
 }
 
 .button-light:hover {
-    text-shadow: 0 0 20px $color-black;
+    border-color: $color-white;
+    color: $color-accent-op;
 }

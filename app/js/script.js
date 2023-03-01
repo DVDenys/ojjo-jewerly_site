@@ -36,7 +36,7 @@ let [...videoBox] = document.querySelectorAll(".social-media__video-box");
 videoBox.forEach((elem, index) => {
   elem.addEventListener("click", () => {
     if (elem.childNodes[3].style.display == "block") {
-      stopOtherVideo(index)
+      stopOtherVideo(index);
       elem.childNodes[3].style.display = "none";
       elem.childNodes[1].play();
     } else {
@@ -50,6 +50,15 @@ function stopOtherVideo(index) {
   videoBox.forEach((e, index) => {
     e.childNodes[3].style.display = "block";
     e.childNodes[1].pause();
-})
+  });
+}
 
-} 
+//product
+let [...prodArr] = document.querySelectorAll('.catalog__card');
+prodArr.forEach((elem)=>{
+  elem.addEventListener('click', (e)=>{
+    if(!e.target.classList.contains('buy-btn')) {
+      window.location='./product.html';
+    }
+  })
+})

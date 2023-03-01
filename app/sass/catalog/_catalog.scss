@@ -43,7 +43,7 @@
 
 .filter__item:hover,
 .filter__item:focus {
-    border: 1px solid $color-light-grey;
+    border-bottom: 1px solid $color-accent;
 }
 
 .catalog__card-list {
@@ -77,6 +77,9 @@
     align-items: center;
     padding: $spacing-medium;
     transition: $transition;
+    cursor: pointer;
+    pointer-events:visibleFill
+
 
     a {
         margin: $spacing-small 0 0 0;
@@ -110,13 +113,14 @@
 }
 
 @media screen and (max-width: 1100px) {
-.filter__item-wrapper {
-    width: 30%;
-    margin-bottom: $spacing-medium;
-    select {
-        width: 100%;
+    .filter__item-wrapper {
+        width: 30%;
+        margin-bottom: $spacing-medium;
+
+        select {
+            width: 100%;
+        }
     }
-}
 }
 
 @media screen and (max-width: 600px) {

@@ -1,0 +1,50 @@
+.bread-crumbs {
+    margin: 55px 0 40px 0;
+}
+
+.bread-crumbs__content {}
+
+.bread-crumbs__list {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.bread-crumbs__item-link {
+    margin-bottom: $spacing-normal;
+
+    a {
+        position: relative;
+        color: $color-accent;
+    }
+
+    a::before {
+        content: '';
+        position: absolute;
+        left: 0;
+        bottom: 0;
+        background-color: $color-accent;
+        height: 1px;
+        width: 100%;
+        transition: $transition;
+    }
+}
+
+.bread-crumbs__item-link:hover {
+    a::before {
+        width: 0;
+    }
+}
+
+.bread-crumbs__item-link.active {
+    a::before {
+        width: 0;
+    }
+
+}
+
+.bread-crumbs__item-slash {
+    color: $color-accent;
+    margin: 0 $spacing-normal $spacing-normal $spacing-normal;
+}

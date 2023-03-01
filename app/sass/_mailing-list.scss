@@ -84,7 +84,8 @@
         }
 
         button:hover {
-            text-shadow: 0 0 20px $color-light-grey;
+            border-color: $color-accent;
+            color: $color-light-grey;
         }
     }
 }
