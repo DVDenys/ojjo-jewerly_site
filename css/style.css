@@ -1257,7 +1257,7 @@ SCROLL
   -webkit-transform: translateY(-50%);
           transform: translateY(-50%);
   background-color: #E5E5E5;
-  background-image: url("../../img/arrow.svg");
+  background-image: url("../img/arrow.svg");
   background-repeat: no-repeat;
   background-position: center center;
   background-size: contain;
