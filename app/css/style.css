@@ -1575,6 +1575,14 @@ SCROLL
       flex-shrink: 1;
 }
 
+.catalog__subtitle {
+  color: #333;
+}
+
+.catalog__title {
+  color: #333;
+}
+
 .filter__item-wrapper {
   position: relative;
 }
@@ -1764,6 +1772,13 @@ SCROLL
   transition: 2s;
 }
 
+.more-information__title {
+  color: #333;
+  text-align: left;
+  margin-bottom: 15px;
+  font-size: 24px;
+}
+
 .more-information__text-block::before {
   content: "";
   height: 100px;
@@ -1839,6 +1854,11 @@ SCROLL
     margin-top: 20px;
     max-width: 350px;
     width: 100%;
+  }
+}
+@media screen and (max-width: 580px) {
+  .more-information__title {
+    text-align: center;
   }
 }
 .bread-crumbs {
@@ -1976,6 +1996,7 @@ SCROLL
       -ms-flex-pack: start;
           justify-content: flex-start;
   color: #979797;
+  margin: 15px 0;
 }
 
 .product__sub-info-item {
@@ -1989,6 +2010,7 @@ SCROLL
   letter-spacing: 0.05em;
   text-transform: uppercase;
   color: #333;
+  margin: 15px 0;
 }
 
 .product__payment-block {
@@ -2003,7 +2025,137 @@ SCROLL
           justify-content: flex-start;
 }
 
-.product__payment-item {
+.product__payment-item:first-child {
   margin-right: 30px;
+}
+
+@media screen and (max-width: 1110px) {
+  .product__content {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  .product__content-img {
+    -webkit-box-pack: space-evenly;
+        -ms-flex-pack: space-evenly;
+            justify-content: space-evenly;
+  }
+  .product__content-info {
+    margin-left: 0;
+    margin-top: 30px;
+  }
+  .product__content-info p {
+    text-align: center;
+  }
+  .img-box {
+    background-image: radial-gradient(rgba(0, 0, 0, 0.1607843137), transparent);
+  }
+  .img-box.main-photo {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    width: 100%;
+  }
+  .product__content-info-title {
+    text-align: center;
+  }
+  .product__sub-info {
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+  .product__payment-block {
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+}
+@media screen and (max-width: 678px) {
+  .img-box.main-photo img {
+    width: 440px;
+    height: auto;
+  }
+  .img-box {
+    display: none;
+    position: relative;
+  }
+  .img-box::before {
+    content: "";
+    position: absolute;
+    left: 7%;
+    top: 50%;
+    width: 20px;
+    height: 20px;
+    border: 1px solid #333;
+    border-radius: 50%;
+    -webkit-transform: rotateZ(90deg);
+            transform: rotateZ(90deg);
+    background-image: url("../img/arrow.svg");
+    background-repeat: no-repeat;
+    background-position: center center;
+  }
+  .img-box::after {
+    content: "";
+    position: absolute;
+    right: 7%;
+    top: 50%;
+    width: 20px;
+    height: 20px;
+    border: 1px solid #333;
+    border-radius: 50%;
+    -webkit-transform: rotateZ(-90deg);
+            transform: rotateZ(-90deg);
+    background-image: url("../img/arrow.svg");
+    background-repeat: no-repeat;
+    background-position: center center;
+  }
+}
+@media screen and (max-width: 580px) {
+  .img-box.main-photo img {
+    width: 340px;
+    height: auto;
+  }
+  .product__payment-block {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  .product__payment-item:first-child {
+    margin-right: 0;
+    margin-bottom: 10px;
+  }
+  .product__payment-item {
+    width: 100%;
+    text-align: center;
+  }
+  .product__sub-info {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  .product__sub-info-item:first-child {
+    margin-bottom: 10px;
+  }
+}
+@media screen and (max-width: 480px) {
+  .img-box.main-photo img {
+    width: 240px;
+    height: auto;
+  }
+  .img-box::before {
+    left: 1%;
+  }
+  .img-box::after {
+    right: 1%;
+  }
 }
 /*# sourceMappingURL=style.css.map */

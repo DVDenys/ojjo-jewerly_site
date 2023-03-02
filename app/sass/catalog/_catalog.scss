@@ -9,6 +9,14 @@
     flex-shrink: 1;
 }
 
+.catalog__subtitle {
+    color: $color-accent;
+}
+
+.catalog__title {
+    color: $color-accent;
+}
+
 .filter__item-wrapper {
     position: relative;
 }
@@ -78,10 +86,8 @@
     padding: $spacing-medium;
     transition: $transition;
     cursor: pointer;
-    pointer-events:visibleFill
 
-
-    a {
+    pointer-events:visibleFill a {
         margin: $spacing-small 0 0 0;
     }
 }

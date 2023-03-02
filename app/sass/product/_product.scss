@@ -2,37 +2,45 @@
     color: $color-accent;
     margin: $spacing-ultra-large 0;
 }
+
 .product__content {
     display: flex;
     align-items: stretch;
     justify-content: space-between;
 }
+
 .product__content-img {
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
-    
+
 }
+
 .img-box {
     cursor: pointer;
     margin-top: $spacing-ultra-large;
+
     img {
         width: 160px;
         height: 130px;
     }
 }
+
 .img-box.main-photo {
     margin-top: 0;
+
     img {
         width: 540px;
         height: 430px;
     }
 }
+
 .product__content-info {
     padding: $spacing-small;
     border: 1px solid $color-hard-grey;
     margin-left: $spacing-ultra-large;
 }
+
 .product__content-info-wrapper {
     height: 100%;
     display: flex;
@@ -42,21 +50,26 @@
     padding: $spacing-ultra-large;
     border: 1px solid $color-hard-grey;
 }
+
 .product__content-info-title {
     text-align: left;
-    
+
 }
+
 .product__sub-info {
     display: flex;
     align-items: center;
     justify-content: flex-start;
     color: $color-hard-grey;
+    margin: $spacing-normal 0;
 }
+
 .product__sub-info-item {
     margin-right: $spacing-large;
 }
-.product__info {
-}
+
+.product__info {}
+
 .product__info-price {
     font-weight: 600;
     font-size: 24px;
@@ -64,12 +77,150 @@
     letter-spacing: 0.05em;
     text-transform: uppercase;
     color: $color-accent;
+    margin: $spacing-normal 0;
 }
+
 .product__payment-block {
     display: flex;
     align-items: center;
     justify-content: flex-start;
 }
-.product__payment-item {
+
+.product__payment-item:first-child {
     margin-right: $spacing-ultra-large;
+}
+
+@media screen and (max-width: 1110px) {
+    .product__content {
+        flex-direction: column;
+    }
+
+    .product__content-img {
+        justify-content: space-evenly;
+    }
+
+    .product__content-info {
+        margin-left: 0;
+        margin-top: $spacing-ultra-large;
+
+        p {
+            text-align: center;
+        }
+    }
+
+    .img-box {
+        background-image: radial-gradient(#00000029, transparent);
+    }
+
+    .img-box.main-photo {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        width: 100%;
+    }
+
+    .product__content-info-title {
+        text-align: center;
+    }
+
+    .product__sub-info {
+        justify-content: center;
+    }
+
+    .product__payment-block {
+        justify-content: center;
+    }
+}
+
+@media screen and (max-width: 678px) {
+    .img-box.main-photo {
+        img {
+            width: 440px;
+            height: auto;
+        }
+    }
+
+    .img-box {
+        display: none;
+        position: relative;
+    }
+
+    .img-box::before {
+        content: '';
+        position: absolute;
+        left: 7%;
+        top: 50%;
+        width: 20px;
+        height: 20px;
+        border: 1px solid $color-accent;
+        border-radius: 50%;
+        transform: rotateZ(90deg);
+        background-image: url('../img/arrow.svg');
+        background-repeat: no-repeat;
+        background-position: center center;
+    }
+
+    .img-box::after {
+        content: '';
+        position: absolute;
+        right: 7%;
+        top: 50%;
+        width: 20px;
+        height: 20px;
+        border: 1px solid $color-accent;
+        border-radius: 50%;
+        transform: rotateZ(-90deg);
+        background-image: url('../img/arrow.svg');
+        background-repeat: no-repeat;
+        background-position: center center;
+    }
+}
+
+@media screen and (max-width: 580px) {
+    .img-box.main-photo {
+        img {
+            width: 340px;
+            height: auto;
+        }
+    }
+
+    .product__payment-block {
+        flex-direction: column;
+    }
+
+    .product__payment-item:first-child {
+        margin-right: 0;
+        margin-bottom: $spacing-small;
+    }
+
+    .product__payment-item {
+        width: 100%;
+        text-align: center;
+    }
+
+    .product__sub-info {
+        flex-direction: column;
+    }
+
+    .product__sub-info-item:first-child {
+        margin-bottom: $spacing-small;
+    }
+
+}
+
+@media screen and (max-width: 480px) {
+    .img-box.main-photo {
+        img {
+            width: 240px;
+            height: auto;
+        }
+    }
+
+    .img-box::before {
+        left: 1%;
+    }
+
+    .img-box::after {
+        right: 1%;
+    }
 }

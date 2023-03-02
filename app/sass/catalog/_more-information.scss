@@ -30,6 +30,13 @@
     }
 }
 
+.more-information__title {
+    color: $color-accent;
+    text-align: left;
+    margin-bottom: $spacing-normal;
+    font-size: $font-size-sub-title;
+}
+
 .more-information__text-block::before {
     content: "";
     height: 100px;
@@ -61,7 +68,7 @@
     flex-direction: column;
     align-items: center;
     margin-bottom: $spacing-large;
-    
+
     p {
         display: inline-block;
         text-align: center;
@@ -69,6 +76,7 @@
         color: $color-accent;
         margin-top: $spacing-small;
     }
+
     img {
         display: inline;
     }
@@ -78,6 +86,7 @@
     .more-information__content {
         flex-direction: column;
     }
+
     .more-information__img-block {
         margin-top: $spacing-medium;
         max-width: 350px;
@@ -85,3 +94,8 @@
     }
 }
 
+@media screen and (max-width: 580px) {
+    .more-information__title {
+        text-align: center;
+    }
+}
